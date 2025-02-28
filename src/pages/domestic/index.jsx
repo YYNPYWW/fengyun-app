@@ -2,15 +2,15 @@ import { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.css'
 
-export default class Index extends Component {
+export default class Domestic extends Component {
   componentDidMount() {
-    console.log('Page loaded.')
+    console.log('Domestic enterprises page loaded.')
   }
 
   render() {
     return (
-      <View className='index'>
-        <Text>首页</Text>
+      <View className='domestic'>
+        <Text>国内企业</Text>
       </View>
     )
   }

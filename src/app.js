@@ -1,17 +1,16 @@
 
-import { useLaunch } from '@tarojs/taro'
-
+import { Component } from 'react'
 import './app.css'
 
-function App({ children }) {
-  useLaunch(() => {
+class App extends Component {
+  componentDidMount() {
     console.log('App launched.')
-  })
+  }
 
-  // children 是将要会渲染的页面
-  return children
+  render() {
+    // children 是将要会渲染的页面
+    return this.props.children
+  }
 }
-  
-
 
 export default App
